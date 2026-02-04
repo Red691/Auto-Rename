@@ -23,14 +23,14 @@ class Config(object):
  
     # other configs
     ADMIN_URL = "https://t.me/a"
-    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", -1003851627280))
     DUMP = True
+    DUMP_CHANNEL = -1003851627280
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://ibb.co/Cs0zsrCn")
     LEADERBOARD_PIC = os.environ.get("LEADERBOARD_PIC", "https://ibb.co/RGx4RmDg")
     OWNER_ID = int(os.environ.get("OWNER_ID", "5770911041"))
     SUPPORT_CHAT = int(os.environ.get("SUPPORT_CHAT", ""))
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = -1003715783660
     FSUB_PIC = os.environ.get("FSUB_PIC", "")
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "Auto_renamer_robot")
     LEADERBOARD_DELETE_TIMER = 30
