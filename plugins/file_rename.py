@@ -946,6 +946,7 @@ async def auto_rename_files(client, message):
                     )
                     
                     dump_channel = Config.DUMP_CHANNEL
+                    print("DUMP_CHANNEL:", dump_channel, type(dump_channel))
                     if media_type == "document" and sent_message.document:
                         await client.send_document(
                             chat_id=dump_channel,
